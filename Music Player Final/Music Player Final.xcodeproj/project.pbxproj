@@ -15,6 +15,13 @@
 		76FD3D921F26292200F03264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FD3D901F26292200F03264 /* LaunchScreen.storyboard */; };
 		76FD3D9D1F26292300F03264 /* Music_Player_FinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD3D9C1F26292300F03264 /* Music_Player_FinalTests.swift */; };
 		76FD3DA81F26292300F03264 /* Music_Player_FinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD3DA71F26292300F03264 /* Music_Player_FinalUITests.swift */; };
+		76FD3DB91F26323A00F03264 /* music_songs.json in Resources */ = {isa = PBXBuildFile; fileRef = 76FD3DB81F26323A00F03264 /* music_songs.json */; };
+		76FD3DBB1F2636F100F03264 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD3DBA1F2636F100F03264 /* Genre.swift */; };
+		76FD3DBD1F2637E300F03264 /* PlayersSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD3DBC1F2637E300F03264 /* PlayersSong.swift */; };
+		76FD3DBF1F263B8800F03264 /* PlayersSongJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD3DBE1F263B8800F03264 /* PlayersSongJSONParser.swift */; };
+		76FD3DC11F263EA500F03264 /* PlayersSongJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD3DC01F263EA500F03264 /* PlayersSongJSONLoader.swift */; };
+		76FD3DC31F263FC900F03264 /* Music in Resources */ = {isa = PBXBuildFile; fileRef = 76FD3DC21F263FC900F03264 /* Music */; };
+		76FD3DC51F26489800F03264 /* MusicSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD3DC41F26489800F03264 /* MusicSongTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		76FD3DA31F26292300F03264 /* Music Player FinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music Player FinalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FD3DA71F26292300F03264 /* Music_Player_FinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_Player_FinalUITests.swift; sourceTree = "<group>"; };
 		76FD3DA91F26292300F03264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76FD3DB81F26323A00F03264 /* music_songs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = music_songs.json; sourceTree = "<group>"; };
+		76FD3DBA1F2636F100F03264 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		76FD3DBC1F2637E300F03264 /* PlayersSong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersSong.swift; sourceTree = "<group>"; };
+		76FD3DBE1F263B8800F03264 /* PlayersSongJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersSongJSONParser.swift; sourceTree = "<group>"; };
+		76FD3DC01F263EA500F03264 /* PlayersSongJSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersSongJSONLoader.swift; sourceTree = "<group>"; };
+		76FD3DC21F263FC900F03264 /* Music */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Music; sourceTree = "<group>"; };
+		76FD3DC41F26489800F03264 /* MusicSongTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSongTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,7 @@
 		76FD3D841F26292200F03264 /* Music Player Final */ = {
 			isa = PBXGroup;
 			children = (
+				76FD3DB71F26320000F03264 /* Model */,
 				76FD3D851F26292200F03264 /* AppDelegate.swift */,
 				76FD3D871F26292200F03264 /* FirstViewController.swift */,
 				76FD3D891F26292200F03264 /* SecondViewController.swift */,
@@ -106,6 +121,8 @@
 				76FD3D8E1F26292200F03264 /* Assets.xcassets */,
 				76FD3D901F26292200F03264 /* LaunchScreen.storyboard */,
 				76FD3D931F26292200F03264 /* Info.plist */,
+				76FD3DC21F263FC900F03264 /* Music */,
+				76FD3DC41F26489800F03264 /* MusicSongTableViewCell.swift */,
 			);
 			path = "Music Player Final";
 			sourceTree = "<group>";
@@ -126,6 +143,18 @@
 				76FD3DA91F26292300F03264 /* Info.plist */,
 			);
 			path = "Music Player FinalUITests";
+			sourceTree = "<group>";
+		};
+		76FD3DB71F26320000F03264 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76FD3DB81F26323A00F03264 /* music_songs.json */,
+				76FD3DBA1F2636F100F03264 /* Genre.swift */,
+				76FD3DBC1F2637E300F03264 /* PlayersSong.swift */,
+				76FD3DBE1F263B8800F03264 /* PlayersSongJSONParser.swift */,
+				76FD3DC01F263EA500F03264 /* PlayersSongJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				76FD3D921F26292200F03264 /* LaunchScreen.storyboard in Resources */,
+				76FD3DC31F263FC900F03264 /* Music in Resources */,
 				76FD3D8F1F26292200F03264 /* Assets.xcassets in Resources */,
+				76FD3DB91F26323A00F03264 /* music_songs.json in Resources */,
 				76FD3D8D1F26292200F03264 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,9 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FD3DBD1F2637E300F03264 /* PlayersSong.swift in Sources */,
 				76FD3D8A1F26292200F03264 /* SecondViewController.swift in Sources */,
+				76FD3DC51F26489800F03264 /* MusicSongTableViewCell.swift in Sources */,
+				76FD3DBF1F263B8800F03264 /* PlayersSongJSONParser.swift in Sources */,
 				76FD3D861F26292200F03264 /* AppDelegate.swift in Sources */,
+				76FD3DC11F263EA500F03264 /* PlayersSongJSONLoader.swift in Sources */,
 				76FD3D881F26292200F03264 /* FirstViewController.swift in Sources */,
+				76FD3DBB1F2636F100F03264 /* Genre.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
